@@ -5,7 +5,7 @@ namespace HideCrosswalksRenewed.Lifecycle {
     using System;
 
     public class HideCrosswalksRenewedMod : IUserMod {
-        public string Name => "Hide Crosswalks: Renewed " + VersionString + " " + BRANCH;
+        public string Name => "Hide Crosswalks: Renewed v" + VersionString + " " + BRANCH;
         public string Description => "Hide Crosswalks when TMPE bans them or when NS2 removes them. Credit to kian.zarrin.";
 #if DEBUG
         public const string BRANCH = "DEBUG";
