@@ -1,19 +1,19 @@
-namespace HideCrosswalks.Lifecycle {
+namespace HideCrosswalksRenewed.Lifecycle {
     using ICities;
     using JetBrains.Annotations;
     using KianCommons;
     using System;
 
-    public class HideCrosswalksMod : IUserMod {
-        public string Name => "RM Crossings " + VersionString + " " + BRANCH;
-        public string Description => "Hide Crosswalks when TMPE bans them or when NS2 removes them.";
+    public class HideCrosswalksRenewedMod : IUserMod {
+        public string Name => "Hide Crosswalks: Renewed " + VersionString + " " + BRANCH;
+        public string Description => "Hide Crosswalks when TMPE bans them or when NS2 removes them. Credit to kian.zarrin.";
 #if DEBUG
         public const string BRANCH = "DEBUG";
 #else
         public const string BRANCH = "";
 #endif
 
-        public static Version ModVersion => typeof(HideCrosswalksMod).Assembly.GetName().Version;
+        public static Version ModVersion => typeof(HideCrosswalksRenewedMod).Assembly.GetName().Version;
 
         // used for in-game display
         public static string VersionString => ModVersion.ToString(2);

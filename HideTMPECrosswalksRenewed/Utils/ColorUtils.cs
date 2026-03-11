@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace HideCrosswalks.Utils {
+namespace HideCrosswalksRenewed.Utils {
     public static class ColorUtils {
         public static void Subtract(this Color[] diff, Color[] colors) {
             float ratio = (float)colors.Length / diff.Length;

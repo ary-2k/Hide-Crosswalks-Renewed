@@ -1,11 +1,11 @@
-namespace HideCrosswalks.Lifecycle {
+namespace HideCrosswalksRenewed.Lifecycle {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Text;
     using ColossalFramework.UI;
     using System.IO;
-    using HideCrosswalks.Utils;
+    using HideCrosswalksRenewed.Utils;
     using KianCommons;
     using ICities;
     using UnityEngine;
@@ -13,7 +13,7 @@ namespace HideCrosswalks.Lifecycle {
     public class Options {
         public static Options instance = null;
         public static readonly char delemiter = '|';
-        static readonly string Path = "HideCrosswalks.Config.txt";
+        static readonly string Path = "HideCrosswalksRenewed.Config.txt";
 
         string loaded_never = "";
         UICheckboxDropDownExt _ui_never;

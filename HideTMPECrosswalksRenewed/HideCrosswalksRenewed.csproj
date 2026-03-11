@@ -4,17 +4,18 @@
     <TargetFramework>net35</TargetFramework>
     <Deterministic>false</Deterministic>
     <LangVersion>latest</LangVersion>
-    <AssemblyTitle>HideCrosswalks</AssemblyTitle>
-    <Product>HideCrosswalks</Product>
-    <Copyright>Copyright ©  2020</Copyright>
+    <AssemblyTitle>HideCrosswalksRenewed</AssemblyTitle>
+    <Product>HideCrosswalksRenewed</Product>
+    <Copyright>Copyright ©  2026</Copyright>
     <Deterministic>false</Deterministic>
-    <AssemblyVersion>3.3.1.*</AssemblyVersion>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileAlignment>512</FileAlignment>
     <LangVersion>latest</LangVersion>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <Configurations>Debug;Release;WorkshopLabs;WorkshopStable</Configurations>
+    <!--<Configurations>Debug;Release;WorkshopLabs;WorkshopStable</Configurations>-->
+    <Configurations>Debug;Release</Configurations>
 
     <PathMap>$(MSBuildProjectDirectory)/=$(ProjectName)/</PathMap>
     <ManagedDLLPath>../dependencies</ManagedDLLPath>
@@ -33,6 +34,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
+  <!--
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WorkshopStable|AnyCPU'">
     <ContentID>1934023593</ContentID>
     <ContentPath>$(SteamPath)/steamapps/workshop/content/255710/$(ContentID)/</ContentPath>
@@ -43,8 +45,9 @@
     <ContentPath>$(SteamPath)/steamapps/workshop/content/255710/$(ContentID)/</ContentPath>
     <DefineConstants></DefineConstants>
   </PropertyGroup>
+  -->
   <ItemGroup>
-    <PackageReference Include="CitiesHarmony.API" Version="2.0.0" />
+    <PackageReference Include="CitiesHarmony.API" Version="2.2.0" />
     <PackageReference Include="Mono.Unofficial.pdb2mdb" Version="4.2.3.4" />
     <PackageReference Include="GitInfo" Version="2.1.2">
       <PrivateAssets>all</PrivateAssets>
@@ -59,11 +62,16 @@
   <ItemGroup>
     <Reference Include="Assembly-CSharp" />
     <Reference Include="ColossalManaged" />
+    <Reference Include="ICities">
+      <HintPath>..\..\..\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\ICities.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine" />
-    <Reference Include="ICities" />
     <Reference Include="TMPE.API" />
     <Reference Include="NetworkSkins" />
     <Reference Include="CSURToolBox" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\..\Steam\steamapps\common\Cities_Skylines\Cities_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="KianCommons\KianCommons\LifeCycleBase.cs" />
@@ -145,8 +153,8 @@
     </ItemGroup>
     <Delete Files="@(FilesToDelete)" />
     <Copy SourceFiles="@(FilesToCopy)" DestinationFolder="$(ContentPath)" />
-    <Copy SourceFiles="$(ProjectDir)Resources\PreviewImage.png" DestinationFolder="$(ContentPath)" Condition="'$(Configuration)'=='WorkshopStable'"/>
-    <Copy SourceFiles="$(ProjectDir)Resources\PreviewImage_Experimental.png" DestinationFiles="$(ContentPath)PreviewImage.png" Condition="'$(Configuration)'=='WorkshopLabs'"/>
+    <Copy SourceFiles="$(ProjectDir)Resources\PreviewImage.png" DestinationFolder="$(ContentPath)" Condition="'$(Configuration)'=='WorkshopStable'" />
+    <Copy SourceFiles="$(ProjectDir)Resources\PreviewImage_Experimental.png" DestinationFiles="$(ContentPath)PreviewImage.png" Condition="'$(Configuration)'=='WorkshopLabs'" />
     <RemoveDir Directories="$(DeployDir)" />
     <Message Importance="high" Text="Moved to $(ContentPath)" />
   </Target>

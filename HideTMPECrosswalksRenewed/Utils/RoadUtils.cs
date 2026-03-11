@@ -1,11 +1,11 @@
 using ColossalFramework;
-using HideCrosswalks.Lifecycle;
+using HideCrosswalksRenewed.Lifecycle;
 using KianCommons;
 using KianCommons.Plugins;
 using System;
 using System.Collections.Generic;
 
-namespace HideCrosswalks.Utils {
+namespace HideCrosswalksRenewed.Utils {
 
     /// <summary>
     /// Road encapsulation:

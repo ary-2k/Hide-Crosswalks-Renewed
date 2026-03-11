@@ -4,7 +4,7 @@ using System.Collections;
 using ColossalFramework.UI;
 using KianCommons;
 
-namespace HideCrosswalks.Utils {
+namespace HideCrosswalksRenewed.Utils {
     using static ColorUtils;
     public static class TextureUtils {
         public delegate Texture2D TProcessor(Texture2D tex);

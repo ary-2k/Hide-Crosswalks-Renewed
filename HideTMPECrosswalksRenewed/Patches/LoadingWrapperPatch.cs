@@ -2,7 +2,7 @@ using HarmonyLib;
 using System;
 using KianCommons;
 
-namespace HideCrosswalks.Patches {
+namespace HideCrosswalksRenewed.Patches {
     [HarmonyPatch(typeof(LoadingWrapper), "OnLevelLoaded")]
     public static class LoadingWrapperPatch {
         public static event Action OnPostLevelLoaded;

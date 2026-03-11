@@ -1,8 +1,8 @@
-namespace HideCrosswalks {
+namespace HideCrosswalksRenewed {
     using System;
     using Utils;
     using KianCommons;
-    using HideCrosswalks.Lifecycle;
+    using HideCrosswalksRenewed.Lifecycle;
 
     public class NetInfoExt {
         public NetInfoExt(ushort index) {

@@ -4,7 +4,7 @@ using UnityEngine;
 using KianCommons;
 using KianCommons.Plugins;
 
-namespace HideCrosswalks.Utils {
+namespace HideCrosswalksRenewed.Utils {
     internal static class NS2Utils {
         private static bool exists = true;
         internal static void Init() {

@@ -1,4 +1,4 @@
-namespace HideCrosswalks.Patches.NetNodePatches {
+namespace HideCrosswalksRenewed.Patches.NetNodePatches {
     using HarmonyLib;
     using System.Collections.Generic;
     using System.Reflection;

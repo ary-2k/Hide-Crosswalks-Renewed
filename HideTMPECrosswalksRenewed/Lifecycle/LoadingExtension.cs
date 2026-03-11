@@ -1,13 +1,13 @@
-namespace HideCrosswalks.Lifecycle {
-    using HideCrosswalks.Patches;
-    using HideCrosswalks.Utils;
+namespace HideCrosswalksRenewed.Lifecycle {
+    using HideCrosswalksRenewed.Patches;
+    using HideCrosswalksRenewed.Utils;
     using ICities;
     using KianCommons;
     using KianCommons.Plugins;
     using System;
 
     public class LoadingExtension : LoadingExtensionBase {
-        public const string HARMONY_ID = "CS.Kian.HideCrosswalks";
+        public const string HARMONY_ID = "CS.Ary.HideCrosswalksRenewed";
 
         public override void OnLevelLoaded(LoadMode mode) => Load();
         public override void OnLevelUnloading() {

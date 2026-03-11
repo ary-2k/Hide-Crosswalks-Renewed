@@ -7,7 +7,7 @@ using KianCommons;
 // TODO check out material.MainTextureScale
 // regarding weird nodes, what if we return a copy of the material?
 // Loading screens Mod owner wrote this about LODs: https://steamcommunity.com/workshop/filedetails/discussion/667342976/1636416951459546732/
-namespace HideCrosswalks.Utils {
+namespace HideCrosswalksRenewed.Utils {
     using static TextureUtils;
     using static PrefabUtils;
     public static class MaterialUtils {

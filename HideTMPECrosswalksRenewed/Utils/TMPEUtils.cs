@@ -5,7 +5,7 @@ using UnityEngine;
 using KianCommons;
 using KianCommons.Plugins;
 
-namespace HideCrosswalks.Utils {
+namespace HideCrosswalksRenewed.Utils {
     internal static class TMPEUTILS {
         private static bool exists;
         internal static void Init() {

@@ -3,10 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace HideCrosswalks.Utils {
+namespace HideCrosswalksRenewed.Utils {
     using ColossalFramework;
     using Patches;
-    using HideCrosswalks.Lifecycle;
+    using HideCrosswalksRenewed.Lifecycle;
     using KianCommons;
 
     public static class PrefabUtils {

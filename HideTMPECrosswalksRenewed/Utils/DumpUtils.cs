@@ -3,7 +3,7 @@ using System;
 using UnityEngine;
 using KianCommons;
 
-namespace HideCrosswalks.Utils {
+namespace HideCrosswalksRenewed.Utils {
     using static TextureUtils;
     public static class DumpUtils {
         public static void LogUVs(NetInfo info1, NetInfo info2) {
