@@ -14,9 +14,8 @@
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
     <DebugType>full</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <Configurations>Debug;Release;WorkshopLabs;WorkshopStable</Configurations>
-    <Configurations>Debug;Release</Configurations>
-
+    <!--<Configurations>Debug;Release;WorkshopLabs;WorkshopStable</Configurations>-->
+    <Configurations>Debug;Release;WorkshopStable</Configurations>
     <PathMap>$(MSBuildProjectDirectory)/=$(ProjectName)/</PathMap>
     <ManagedDLLPath>../dependencies</ManagedDLLPath>
     <SteamPath>~/Library/Application Support/Steam/</SteamPath>
@@ -35,15 +34,15 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WorkshopStable|AnyCPU'">
-    <ContentID>1934023593</ContentID>
+    <ContentID>3682758360</ContentID>
     <ContentPath>$(SteamPath)/steamapps/workshop/content/255710/$(ContentID)/</ContentPath>
     <DefineConstants></DefineConstants>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WorkshopLabs|AnyCPU'">
+  <!--<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='WorkshopLabs|AnyCPU'">
     <ContentID>1939169189</ContentID>
     <ContentPath>$(SteamPath)/steamapps/workshop/content/255710/$(ContentID)/</ContentPath>
     <DefineConstants></DefineConstants>
-  </PropertyGroup>
+  </PropertyGroup>-->
   <ItemGroup>
     <PackageReference Include="CitiesHarmony.API" Version="2.2.0" />
     <PackageReference Include="Mono.Unofficial.pdb2mdb" Version="4.2.3.4" />
